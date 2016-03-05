@@ -18,7 +18,7 @@ var myIntersection = function(array) {
 		}
 	}
 	for(var num in myObj){
-		if(myObj[num] > 1) {
+		if(myObj[num] > arguments.length) {
 			myArr.push(parseInt(num));
 		}
 	}
