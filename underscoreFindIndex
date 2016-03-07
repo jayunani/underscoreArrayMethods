@@ -1,0 +1,18 @@
+// _.findIndex(array, predicate, [context]) 
+// Similar to _.indexOf, returns the first index where the predicate truth test 
+//passes; 
+// otherwise returns -1.
+
+// _.findIndex([4, 6, 8, 12], isPrime);
+// => -1 // not found
+// _.findIndex([4, 6, 7, 12], isPrime);
+// => 2
+
+var myFindIndex = function(array, callback){
+	for(var i = 0; i < array.length; i++){
+		if(callback(array[i]) === true) {
+			return array.indexOf(array[i]);
+		}
+	}
+	return -1;
+}
